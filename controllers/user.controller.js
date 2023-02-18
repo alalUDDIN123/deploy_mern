@@ -47,7 +47,7 @@ const loginUser = async (req, res) => {
         if (!RegisteredUser) {
             res.status(400).send({ message: "Email could not found" })
         } else {
-            isMatch = bcrypt.compareSync(password, RegisteredUser.password);
+           let  isMatch = bcrypt.compareSync(password, RegisteredUser.password);
 
             if (isMatch) {
                 logUser(RegisteredUser.username,RegisteredUser.role)
