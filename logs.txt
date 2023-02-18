@@ -1,0 +1,3 @@
+
+Username : user1 logged in with role : admin
+Username : user2 logged in with role : user
